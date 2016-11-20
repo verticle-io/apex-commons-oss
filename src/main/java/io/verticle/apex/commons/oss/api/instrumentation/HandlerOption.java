@@ -14,12 +14,11 @@
  *    limitations under the License.
  */
 
-package io.verticle.apex.commons.oss.collectors;
+package io.verticle.apex.commons.oss.api.instrumentation;
 
 /**
- * metric domains
+ * Options for {@link Handler} implementations
  * @author Jens Saade
  */
-public enum Domain {
-    business, application, process, environment, hardware, generic
+public interface HandlerOption {
 }

@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package io.verticle.apex.commons.oss.collectors;
+package io.verticle.apex.commons.oss.collectors.model;
 
 import java.util.List;
 
