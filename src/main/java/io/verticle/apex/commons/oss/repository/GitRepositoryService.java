@@ -48,6 +48,15 @@ public class GitRepositoryService extends RepositoryService{
     private String remoteRepositoryPassword;
 
 
+    public GitRepositoryService(Path localRepositoryPath, String remoteRepositoryUri, String remoteRepositoryUsername, String remoteRepositoryPassword) {
+        super(localRepositoryPath);
+
+        this.localRepositoryPath = localRepositoryPath;
+        this.remoteRepositoryUri = remoteRepositoryUri;
+        this.remoteRepositoryUsername = remoteRepositoryUsername;
+        this.remoteRepositoryPassword = remoteRepositoryPassword;
+
+    }
 
     public void init() throws Exception {
 

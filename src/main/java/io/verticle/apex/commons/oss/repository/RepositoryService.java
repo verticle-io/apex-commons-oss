@@ -29,11 +29,13 @@ import java.util.List;
  */
 public abstract class RepositoryService {
 
+    RepositoryReader repositoryReader;
+    RepositoryWriter repositoryWriter;
 
-    abstract Path getLocalRepositoryPath();
-
-    RepositoryReader repositoryReader = new RepositoryReader(getLocalRepositoryPath());
-    RepositoryWriter repositoryWriter = new RepositoryWriter(getLocalRepositoryPath());
+    public RepositoryService(Path localRepositoryPath) {
+         repositoryReader = new RepositoryReader(localRepositoryPath);
+         repositoryWriter = new RepositoryWriter(localRepositoryPath);
+    }
 
     public List<MetaModel> loadMetaModels() {
         return repositoryReader.loadMetaModels();
