@@ -6,7 +6,7 @@
     <name>APEX Commons OSS</name>
     <groupId>io.verticle.apex</groupId>
     <artifactId>commons-oss</artifactId>
-    <version>v0.7</version>
+    <version>v0.8-SNAPSHOT</version>
 
     <build>
         <plugins>
